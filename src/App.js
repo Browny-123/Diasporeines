@@ -10,7 +10,6 @@ import Adhésion from "./components/Adhésion";
 import Contact from "./components/Contact";
 import Donate from "./components/Donate";
 import Footer from "./components/Footer";
-import "./styles/reset.css";
 
 function App() {
   return (
