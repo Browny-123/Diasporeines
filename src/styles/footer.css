@@ -1,0 +1,19 @@
+.footer {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #101f46;
+  color: white;
+  padding-bottom: 13px;
+  font-family: helvetica;
+  font-size: 13px;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,54 @@
+@mixin flex($direction, $justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  flex-direction: $direction;
+  align-items: $alignItems;
+}
+
+$mainFont: Helvetica, sans-serif;
+
+.nav-main-container {
+  @include flex(row, flex-start, center);
+  height: 60px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: rgba(60, 60, 60, 0.75);
+  font-family: $mainFont;
+  z-index: 1;
+  position: relative;
+
+  .logo-nav-link {
+    width: 10%;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 19px;
+    font-weight: lighter;
+  }
+
+  .nav-links {
+    width: 77%;
+    display: flex;
+    justify-content: center;
+
+    .nav-link {
+      margin: 0 12px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+    .nav-active {
+      color: #ec5e87;
+    }
+  }
+  .donate-nav-link {
+    @include flex(row, center, center);
+    width: 13%;
+    text-decoration: none;
+    color: white;
+    background-color: #0e2973;
+    height: 100%;
+    margin: auto 0;
+    font-size: 20px;
+  }
+}

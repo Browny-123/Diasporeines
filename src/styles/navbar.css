@@ -1,0 +1,74 @@
+.nav-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: rgba(60, 60, 60, 0.75);
+  font-family: Helvetica, sans-serif;
+}
+
+.nav-main-container .logo-nav-link {
+  width: 10%;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-size: 19px;
+  font-weight: lighter;
+}
+
+.nav-main-container .nav-links {
+  width: 77%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-main-container .nav-links .nav-link {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-main-container .nav-links .nav-active {
+  color: #ec5e87;
+}
+
+.nav-main-container .donate-nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13%;
+  text-decoration: none;
+  color: white;
+  background-color: #0e2973;
+  height: 100%;
+  margin: auto 0;
+  font-size: 20px;
+}
+/*# sourceMappingURL=navbar.css.map */

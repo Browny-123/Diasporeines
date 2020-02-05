@@ -1,0 +1,133 @@
+@mixin flex($direction, $justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  flex-direction: $direction;
+  align-items: $alignItems;
+}
+
+$mainFont: Helvetica, sans-serif;
+$mainColor: #0e2973;
+$secondColor: #213e8c;
+
+.home-main-container {
+  width: 100%;
+  height: auto;
+  font-family: $mainFont;
+  z-index: 0;
+  position: relative;
+  top: -60px;
+  margin-bottom: -60px;
+  .home-main-header {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    background-image: url("https://res.cloudinary.com/dsj26eqz4/image/upload/v1580904424/download_ptsmf7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(row, center, flex-start);
+    color: white;
+
+    h1 {
+      width: 50%;
+      text-align: center;
+      font-size: 40px;
+      color: $mainColor;
+      margin-top: 80px;
+    }
+  }
+
+  .home-second-section {
+    @include flex(row, center, flex-start);
+    width: 100%;
+    height: 200px;
+    flex: 1;
+    .second-section-info {
+      width: 33.5%;
+      height: 100%;
+      padding-top: 40px;
+      text-align: center;
+      color: white;
+      h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+    }
+    .second-section-info:nth-child(1) {
+      background-color: #0e2973;
+    }
+    .second-section-info:nth-child(2) {
+      background-color: #7dabf4;
+    }
+    .second-section-info:nth-child(3) {
+      background-color: #101f46;
+    }
+  }
+  .home-third-section {
+    @include flex(column, center, center);
+    width: 100%;
+    height: 170px;
+    background-color: #213e8c;
+    color: white;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 200;
+      font-style: italic;
+      width: 55%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 200;
+    }
+  }
+  .home-third-section > h3::before {
+    content: "<<";
+  }
+  .home-third-section > h3::after {
+    content: ">>";
+  }
+
+  .home-fourth-section {
+    height: 480px;
+    width: 100%;
+    background-color: #213e8c;
+    color: white;
+    @include flex(row, center, center);
+    .fourth-section-text {
+      @include flex(column, center, center);
+      height: 100%;
+      width: 42%;
+
+      h3 {
+        font-size: 65px;
+      }
+
+      h4 {
+        font-size: 30px;
+        margin: 14px 0;
+      }
+
+      .home-donation {
+        width: 180px;
+        height: 60px;
+        margin-top: 14px;
+        font-size: 20px;
+        color: #213e8c;
+      }
+    }
+
+    .fourth-section-image {
+      height: 100%;
+      width: 58%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
