@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/navbar.scss";
+import "../styles/navbar/navbar.scss";
 
 export default function NavBar() {
   return (
@@ -13,25 +13,18 @@ export default function NavBar() {
           Accueil
         </NavLink>
         <NavLink
-          to="/aPropos"
-          className="nav-link"
-          activeClassName="nav-active"
-        >
-          À propos
-        </NavLink>
-        <NavLink
-          to="/nousSoutenir"
-          className="nav-link"
-          activeClassName="nav-active"
-        >
-          Nous soutenir
-        </NavLink>
-        <NavLink
-          to="/actualités"
+          to="/Actualités"
           className="nav-link"
           activeClassName="nav-active"
         >
           Actualités
+        </NavLink>
+        <NavLink
+          to="/diasporeines"
+          className="nav-link"
+          activeClassName="nav-active"
+        >
+          Diasporeines
         </NavLink>
         <NavLink
           to="/projets"
@@ -41,21 +34,21 @@ export default function NavBar() {
           Projets
         </NavLink>
         <NavLink
-          to="/adhésion"
+          to="/nousrejoindre"
           className="nav-link"
           activeClassName="nav-active"
         >
-          Adhésion
+          Nous Rejoindre
         </NavLink>
         <NavLink
-          to="/contact"
+          to="/partenaires"
           className="nav-link"
           activeClassName="nav-active"
         >
-          Contact
+          Partenaires
         </NavLink>
       </div>
-      <NavLink to="/donate" className="donate-nav-link">
+      <NavLink to="/faireundon" className="donate-nav-link">
         Faire un don
       </NavLink>
     </nav>
